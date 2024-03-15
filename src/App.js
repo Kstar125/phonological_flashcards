@@ -10,7 +10,7 @@ function App() {
   let [cardState, setCardState] = useState(0)
 
   const chooseCardState = () => {
-    let tmpVar = Math.floor(Math.random() * 18);
+    let tmpVar = Math.floor(Math.random() * 29);
 
     setCardState(cardState = tmpVar)
     console.log(cardState)
@@ -49,7 +49,7 @@ function App() {
         </div>
     
         <div className = 'card'>
-          {variantState == 0 ? <PhonemeCard ipaIndex = {cardState}/> : <FeatureCard ipaIndex = {cardState} />}
+          {variantState === 0 ? <PhonemeCard ipaIndex = {cardState}/> : <FeatureCard ipaIndex = {cardState} />}
         </div>
 
         <div className='cardBottom'>
@@ -57,7 +57,7 @@ function App() {
             <button className = 'generateNewCard' onClick={chooseCardState}>New Card</button>
           </div>
           <div className  = 'cardBottomLeft'>
-            <button className = 'generateVariantCard' onClick = {switchVariantState}>{variantState == 0 ? "Features":"Phoneme"}</button>
+            <button className = 'generateVariantCard' onClick = {switchVariantState}>{variantState === 0 ? "Features":"Phoneme"}</button>
           </div>
         </div>
       </div>

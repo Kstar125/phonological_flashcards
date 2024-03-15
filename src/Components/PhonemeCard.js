@@ -10,7 +10,7 @@ const PhonemeCard = (props) => {
       </div>
      
       <div className = 'cardCenterColumn'>
-        <p className = 'cardText'>{IPA[props.ipaIndex]}</p>
+        <p className = 'cardText'>/ {IPA[props.ipaIndex]} /</p>
       </div>
       <div className = 'cardRightColumn'>
 
