@@ -9,6 +9,13 @@ function App() {
 
   let [cardState, setCardState] = useState(0)
 
+  /**
+   * chooseCardState handles the state of cardState.
+   * 
+   * Chooses an arbitrary phoneme to represent when a new card is rendered on button press.
+   * 
+   * No return value.
+   */  
   const chooseCardState = () => {
     let tmpVar = Math.floor(Math.random() * 29);
 
@@ -18,6 +25,13 @@ function App() {
 
   let [variantState, setVariantState] = useState(0)
 
+  /**
+   * switchVariantState handles the state of variantState.
+   * 
+   * Switches between rendering the phoneme or natural class features for a given card on button press.
+   * 
+   * No return value.
+   */  
   const switchVariantState = () => {
     
     let tmpVar = 0;

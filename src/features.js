@@ -32,4 +32,6 @@ const FEATURES = [
     ["+ Cons", "- Son", "- Approx", "- Nasal", "+ Cont", "- Lat", "+ Voice", "- Spread", "Dorsal", "+ Strid", "N/A", "N/A", "- High", "+ Back"] //ɣ
 ];
 
+//Natural Class features for all cards.
+
 export default FEATURES;
